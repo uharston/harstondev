@@ -3,9 +3,9 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 function NavBar() {
     return(
-            <Navbar bg='light' expand='sm' >
+            <Navbar  variant='dark' bg='dark' expand='sm' sticky='top' >
                 <Nav >
-                        <Nav.Link href='#'>Logo</Nav.Link>
+                    <Nav.Link href='#'>Logo</Nav.Link>
                 </Nav>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='ml-auto'>
