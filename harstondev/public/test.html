@@ -132,6 +132,7 @@
    /* width: 100%; */
    max-width: 40vw;
    min-width: 260px;
+   padding-bottom: 30px;
 }
 
 .project-title {
@@ -195,6 +196,10 @@ h1, h2 {
    justify-content: space-between;
 }
 
+.project-col {
+   text-align: center;
+}
+
 .submit {
    background-color: black;
 }
@@ -207,6 +212,19 @@ h1, h2 {
    font-family: 'ROBOTECHGPRegular';
    font-weight: bold;
    font-style: normal;
+}
+
+a { color: inherit; } 
+
+a:hover {
+   color: green;
+   text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+   .profile-image {
+      padding-bottom: 20px;
+   }
 }
 
 
@@ -226,10 +244,10 @@ h1, h2 {
                <canvas id="demo-canvas"></canvas>
                <h1 class="main-title"><span class="thin" id="thin">I am Uriah Harston<br></span>A Full Stack Developer</h1>
                <div class="welcome-icons">
-                  <i class="fab fa-linkedin-in fa-3x"></i>
-                  <i class="fab fa-github fa-3x"></i>
-                  <i class="fab fa-twitter fa-3x"></i>
-                  <i class="fab fa-medium fa-3x"></i>
+                  <a href="https://www.linkedin.com/in/uriah-harston/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                  <a href="https://github.com/uharston" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                  <a href="https://twitter.com/UriahHarston" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                  <a href="https://medium.com/@uharston" target="_blank"><i class="fab fa-medium fa-3x"></i></a>
 
                </div>
                
@@ -284,15 +302,15 @@ h1, h2 {
                </div>
                
                   <div class="card border-success">
-                     <div class='row project-cards'>
-                     <div class='col'>
+                     <div class='row project-cards align-items-center'>
+                     <div class='col project-col'  >
                            <img src='../src/Portfolio/Primo-screenshot.png' class='project-image' alt="skateboard spot finder website landing page"/>
                      </div> 
                      <div class="col">
                         <h2 class="project-title">Primo</h2>
-                        <i class="fab fa-github fa-2x float-right "></i>
+                        <a href="https://www.youtube.com/watch?v=xtm3qMIe9Vw" target="_blank"><i class="fas fa-external-link-alt fa-2x float-right "></i></a>
+                        <a href="https://github.com/uharston/primo" target="_blank"><i class="fab fa-github fa-2x float-right "></i></a>
                         
-                        <i class="fas fa-external-link-alt fa-2x float-right "></i>
                         <p> Skateboarders are always looking for the next best spot to shred. Primo is a web app designed to connect 
                         skateboarders all over the US to the best skate spots in their local area. </p>
                         <div class="project-icons">
@@ -306,15 +324,15 @@ h1, h2 {
                </div>
 
                <div class="card border-success">
-                  <div class='row project-cards'>
-                  <div class='col'>
+                  <div class='row project-cards align-items-center'>
+                  <div class='col project-col'>
                            <img src='../src/Portfolio/CarQuiz-Screenshot.png' class='project-image' alt="car trivia website landing page" />
                         </div>
                         <div class='col'>
                            <h2 class="project-title">Car Quiz</h2>
-                           <i class="fab fa-github fa-2x float-right "></i>
+                           <a href="https://www.youtube.com/watch?v=F2l5MqMdleI"  target="_blank"><i class="fas fa-external-link-alt fa-2x float-right "></i></a>
+                           <a href="https://github.com/uharston/js_rails_project " target="_blank"><i class="fab fa-github fa-2x float-right "></i></a>
                            
-                           <i class="fas fa-external-link-alt fa-2x float-right "></i>
                         <p class=''>Do you think of yourself as a somewhat of a car connoisseur? CarQuiz is there for you to test if that is a simple 
                               dream or if you are indeed a car guru. 
                         </p>
@@ -327,16 +345,16 @@ h1, h2 {
                      </div>
                </div>
                <div class="card border-success">
-                  <div class='row project-cards'>
-                  <div class='col'>
+                  <div class='row project-cards align-items-center'>
+                  <div class='col project-col'>
                            <img src='../src/Portfolio/Pooch-screenshot.png' class='project-image' alt="dog adoption website landing page"/>
                         </div>
                         <div class='col'>
                            <h2 class="project-title">Pooch</h2>
-                           <i class="fab fa-github fa-2x float-right "></i>
                            
-                           <i class="fas fa-external-link-alt fa-2x float-right "></i>
-                              <p>Dogs are known to be man's best friend. Pooch connects local rescues to percpective owners looking to give these doggos
+                           <a href="https://www.youtube.com/watch?v=JGJllMmW7Fg&t=8s" target="_blank"><i class="fas fa-external-link-alt fa-2x float-right "></i></a>
+                           <a href="https://github.com/uharston/pooch" target="_blank"><i class="fab fa-github fa-2x float-right "></i></a>
+                           <p>Dogs are known to be man's best friend. Pooch connects local rescues to percpective owners looking to give these doggos
                               the love and attention they have been missing. </p>
                               <div class="project-icons">
                                  <i class="fab fa-html5 fa-2x "></i>
@@ -392,7 +410,7 @@ h1, h2 {
    <div class='footer text-center border-top border-success' id="footer"style="margin-top: 40px; padding-bottom: 25px;">
       <p style="padding-top: 25px;">"Hard Work Beats Talent"</p>
       <p>This site was developed 💯% by Uriah Harston</p>
-      <p> Linkedin | Github | Twitter</p>
+      <p><a href="https://www.linkedin.com/in/uriah-harston/" target="_blank">Linkedin</a> | <a href="https://github.com/uharston" target="_blank">Github</a> | <a href="https://twitter.com/UriahHarston" target="_blank">Twitter</a></p>
    </div>
    
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
