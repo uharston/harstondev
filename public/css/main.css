@@ -1,0 +1,215 @@
+html {
+    scroll-behavior: smooth;
+ }
+.large-header {
+position: relative;
+width: 100%;
+background: #111;
+overflow: hidden;
+background-size: cover;
+background-position: center center;
+z-index: 1;
+}
+
+.demo .large-header {
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+width: 100%;
+position: absolute;
+margin: 0;
+padding: 0;
+color: #F9F1E9;
+text-align: center;
+top: 42%;
+left: 50%;
+-webkit-transform: translate3d(-50%, -50%, 0);
+transform: translate3d(-50%, -50%, 0);
+}
+
+.welcome-icons {
+position: absolute;
+margin: 0;
+padding: 0;
+width: 100%;
+letter-spacing: 7em;
+color: white;
+text-align: center;
+top: 85%;
+left: 55%;
+-webkit-transform: translate3d(-50%, -50%, 0);
+transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title  {
+font-family: 'ROBOTECHGPRegular';
+font-weight: bold;
+font-style: normal;
+text-transform: uppercase;
+font-size: 7em;
+letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+font-weight: 200;
+}
+
+.thin {
+font-size: 0.5em;
+}
+
+@media only screen and (max-width: 1020px) {
+.welcome-icons {
+position: absolute;
+margin: 0;
+padding: 0;
+width: 100%;
+letter-spacing: 3em;
+color: white;
+text-align: center;
+top: 85%;
+left: 55%;
+-webkit-transform: translate3d(-50%, -50%, 0);
+transform: translate3d(-50%, -50%, 0);
+}
+}
+
+@media only screen and (max-width: 570px) {
+.welcome-icons {
+position: absolute;
+margin: 0;
+padding: 0;
+width: 100%;
+letter-spacing: 1em;
+color: white;
+text-align: center;
+top: 85%;
+left: 52%;
+-webkit-transform: translate3d(-50%, -50%, 0);
+transform: translate3d(-50%, -50%, 0);
+}
+}
+
+@media only screen and (max-width: 768px) {
+.demo .main-title {
+font-size: 3em;
+}
+}
+
+.page-wrapper{
+font-family: 'Aldrich';
+background: black;
+color: whitesmoke;
+}
+
+#navbar-text {
+color: whitesmoke;
+}
+
+.page-content {
+padding-top: 50px;
+}
+
+.profile-image{
+margin-top: 30px;
+padding-bottom: 20px;
+width: 210px;
+}
+
+.project-image {
+width: 100%;
+padding-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 765px) {
+.project-image {
+width: 80%;
+}
+}
+
+.project-title {
+display: inline-block;
+}
+
+i {
+padding-left:10px;
+}
+
+#footer {
+background-color: black;
+color: whitesmoke;
+}
+h1{
+background: -webkit-linear-gradient(rgb(255, 254, 254),green);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 10vw;
+}
+
+h1, h2 {
+font-family: 'ROBOTECHGPRegular';
+font-weight: bold;
+font-style: normal;
+}
+
+#about-me-title {
+font-size: 8vw;
+}
+
+.card {
+padding: 50px;
+margin-bottom: 50px;
+background-color: black;
+}
+
+.navbar-custom {
+background-color: black;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+color: white;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+color: green;
+}
+
+.project-icons {
+display: flex;
+justify-content: space-between;
+height: 40px;
+vertical-align: bottom;
+}
+
+.project-col {
+text-align: center;
+}
+
+.submit {
+background-color: black;
+}
+
+.submit:hover {
+background-color: green;
+}
+
+.navbar-logo {
+font-family: 'ROBOTECHGPRegular';
+font-weight: bold;
+font-style: normal;
+}
+
+a { color: inherit; } 
+
+a:hover {
+color: green;
+text-decoration: none;
+}

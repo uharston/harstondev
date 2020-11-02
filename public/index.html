@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./fonts/font-mfizz-2.4.1/font-mfizz.css">
 
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/robotech-gp" type="text/css"/>
@@ -40,222 +41,16 @@
    </script>
    <!-- End of Async Drift Code -->
     <style>
-       html {
-          scroll-behavior: smooth;
-       }
-.large-header {
-   position: relative;
-   width: 100%;
-   background: #111;
-   overflow: hidden;
-   background-size: cover;
-   background-position: center center;
-   z-index: 1;
-}
+      .card {
+         background-color: black;
+      }
 
-.demo .large-header {
-   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
-}
+      a { color: inherit; } 
 
-.main-title {
-   width: 100%;
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   color: #F9F1E9;
-   text-align: center;
-   top: 42%;
-   left: 50%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
-
-.welcome-icons {
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   letter-spacing: 7em;
-   color: white;
-   text-align: center;
-   top: 85%;
-   left: 55%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
-
-.demo .main-title  {
-   font-family: 'ROBOTECHGPRegular';
-   font-weight: bold;
-   font-style: normal;
-   text-transform: uppercase;
-   font-size: 7em;
-   letter-spacing: 0.1em;
-}
-
-.main-title .thin {
-   font-weight: 200;
-}
-
-.thin {
-   font-size: 0.5em;
-}
-
-@media only screen and (max-width: 1020px) {
-   .welcome-icons {
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   letter-spacing: 3em;
-   color: white;
-   text-align: center;
-   top: 85%;
-   left: 55%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
-}
-
-@media only screen and (max-width: 570px) {
-   .welcome-icons {
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   letter-spacing: 1em;
-   color: white;
-   text-align: center;
-   top: 85%;
-   left: 52%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
-}
-
-@media only screen and (max-width: 768px) {
-   .demo .main-title {
-      font-size: 3em;
-   }
-}
-
-.page-wrapper{
-   font-family: 'Aldrich';
-   background: black;
-   color: whitesmoke;
-}
-
-#navbar-text {
-   color: whitesmoke;
-}
-
-.page-content {
-   padding-top: 50px;
-}
-
-.profile-image{
-   margin-top: 30px;
-   padding-bottom: 20px;
-   width: 210px;
-}
-
-.project-image {
-   width: 100%;
-   padding-bottom: 30px;
-}
-
-
-@media only screen and (max-width: 765px) {
-   .project-image {
-      width: 80%;
-   }
-}
-
-.project-title {
-   display: inline-block;
-}
-
-i {
-   padding-left:10px;
-}
-
-#footer {
-   background-color: black;
-   color: whitesmoke;
-}
-h1{
-   background: -webkit-linear-gradient(rgb(255, 254, 254),green);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   font-size: 10vw;
-}
-
-h1, h2 {
-   font-family: 'ROBOTECHGPRegular';
-   font-weight: bold;
-   font-style: normal;
-}
-
-#about-me-title {
-   font-size: 8vw;
-}
-
-.card {
-   padding: 50px;
-   margin-bottom: 50px;
-   background-color: black;
-}
-
-.navbar-custom {
-    background-color: black;
-}
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: rgba(255,255,255,.8);
-}
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: white;
-}
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: green;
-}
-
-.project-icons {
-   display: flex;
-   justify-content: space-between;
-   height: 40px;
-   vertical-align: bottom;
-}
-
-.project-col {
-   text-align: center;
-}
-
-.submit {
-   background-color: black;
-}
-
-.submit:hover {
-   background-color: green;
-}
-
-.navbar-logo {
-   font-family: 'ROBOTECHGPRegular';
-   font-weight: bold;
-   font-style: normal;
-}
-
-a { color: inherit; } 
-
-a:hover {
-   color: green;
-   text-decoration: none;
-}
-
+      a:hover {
+         color: green;
+         text-decoration: none;
+      }
 
     </style>
 </head>
@@ -310,7 +105,7 @@ a:hover {
                      <section class='container'>
                         <div class='row'>
                               <div class='col-xs-12 col-md-6 text-center'> 
-                                 <img src='./Portfolio/profile2.png' class='profile-image ' />
+                                 <img src='./images/profile2.png' class='profile-image ' />
                               </div>
                               <div class='col-xs-12 col-md-6'> 
                               <h1 id="about-me-title">About Me</h1><br/>
@@ -333,7 +128,7 @@ a:hover {
                   <div class="card border-success">
                      <div class='row project-cards align-items-center'>
                         <div class='col-xs-12 col-lg-6 project-col'  >
-                           <img src='./Portfolio/Primo-screenshot.png' class='project-image' alt="skateboard spot finder website landing page"/>
+                           <img src='./images/Primo-screenshot.png' class='project-image' alt="skateboard spot finder website landing page"/>
                         </div> 
                         <div class="col-xs-12 col-lg-6">
                            <h2 class="project-title">Primo</h2>
@@ -346,7 +141,7 @@ a:hover {
                               <i class="fab fa-css3-alt fa-2x "></i>
                               <img class="devsite-product-logo" alt="Google Maps Platform" src="https://developers.google.com/maps/images/maps-icon.svg?authuser=1" srcset="" width="40px" loading="lazy">
                               <i class="icon-ruby fa-2x " style="color: red; margin-bottom: 10px;"></i>
-                              <img style="padding-bottom: 15px;" src="./Portfolio/sinatra-logo.png" width="40px" alt="Sinatra Logo">
+                              <img style="padding-bottom: 15px;" src="./images/sinatra-logo.png" width="40px" alt="Sinatra Logo">
                            </div>
                         </div>
                      </div>
@@ -356,7 +151,7 @@ a:hover {
                   <div class="card border-success">
                      <div class='row project-cards align-items-center'>
                         <div class='col-xs-12 col-lg-6 project-col'>
-                           <img src='./Portfolio/CarQuiz-Screenshot.png' class='project-image' alt="car trivia website landing page" />
+                           <img src='./images/CarQuiz-Screenshot.png' class='project-image' alt="car trivia website landing page" />
                         </div>
                            <div class='col-xs-12 col-lg-6'>
                               <h2 class="project-title">Car Quiz</h2>
@@ -381,7 +176,7 @@ a:hover {
                   <div class="card border-success">
                      <div class='row project-cards align-items-center'>
                         <div class='col-xs-12 col-lg-6 project-col'>
-                           <img src='./Portfolio/Pooch-screenshot.png' class='project-image' alt="dog adoption website landing page"/>
+                           <img src='./images/Pooch-screenshot.png' class='project-image' alt="dog adoption website landing page"/>
                         </div>
                         <div class='col-xs-12 col-lg-6'>
                            <h2 class="project-title">Pooch</h2>
@@ -390,7 +185,7 @@ a:hover {
                            <p>Dogs are known to be man's best friend. Pooch connects local rescues to percpective owners looking to give these doggos
                               the love and attention they have been missing. </p>
                            <div class="project-icons">
-                              <img src="./Portfolio/google-cloud.png" height="100%"/>
+                              <img src="./images/google-cloud.png" height="100%"/>
 
                               <!-- <i class="fab fa-html5 fa-2x "></i> -->
                               <!-- <i class="fab fa-css3-alt fa-2x "></i> -->
