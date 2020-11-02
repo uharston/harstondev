@@ -37,7 +37,7 @@
      }
    }();
    drift.SNIPPET_VERSION = '0.3.1';
-   drift.load('vmz47uyre2zk');
+   // drift.load('vmz47uyre2zk');
    </script>
    <!-- End of Async Drift Code -->
     <style>
@@ -54,9 +54,15 @@
 
     </style>
 </head>
-   <body>
+   <body onload="myFunction()" style="margin:0;">
+
+      <div class="preloader"> 
+
+      </div>
+      <h1 class="preloader-text">One Moment...</h1>
+
       
-      <div class="page-wrapper">
+      <div class="page-wrapper" id="myDiv" style="display: none;">
 
          <!-- Welcome Animation -->
          <div class=" demo">
@@ -225,6 +231,20 @@
          <p>This site was developed 💯% by Uriah Harston</p>
          <p><a href="https://www.linkedin.com/in/uriah-harston/" target="_blank">Linkedin</a> | <a href="https://github.com/uharston" target="_blank">Github</a> | <a href="https://twitter.com/UriahHarston" target="_blank">Twitter</a></p>
       </div>
+
+      <script>
+         let myVar;
+         
+         function myFunction() {
+           myVar = setTimeout(showPage, 3000);
+         }
+         
+         function showPage() {
+           document.getElementsByClassName("preloader")[0].style.display = "none";
+           document.getElementsByClassName("preloader-text")[0].style.display = "none";
+           document.getElementById("myDiv").style.display = "block";
+         }
+         </script>
       
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

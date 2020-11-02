@@ -1,6 +1,65 @@
 html {
     scroll-behavior: smooth;
+    background-color: black;
  }
+
+ .preloader {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     z-index: 1;
+     width: 150px;
+     height: 150px;
+     margin: -75px 0 0 -75px;
+     border: 16px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 16px solid green;
+     width: 120px;
+     height: 120px;
+     -webkit-animation: spin 2s linear infinite;
+     animation: spin 2s linear infinite;
+ }
+
+ @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .preloader-text {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform:translateX(-50%);
+
+  }
+
+  /* Add animation to "page content" */
+.page-wrapper {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from {  opacity:0 } 
+    to { opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ opacity:0 } 
+    to{  opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
 .large-header {
 position: relative;
 width: 100%;
@@ -92,15 +151,35 @@ transform: translate3d(-50%, -50%, 0);
 }
 
 @media only screen and (max-width: 768px) {
-.demo .main-title {
+.demo .main-title  {
 font-size: 3em;
 }
 }
 
+
+@media only screen and (max-width: 768px) {
+    .preloader-text {
+    font-size: 40px;
+    }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .preloader-text {
+        font-size: 30px;
+        }
+        }
+
+    @media only screen and (max-width: 350px) {
+        .preloader-text {
+        font-size: 20px;
+        }
+        }
+
 .page-wrapper{
-font-family: 'Aldrich';
-background: black;
-color: whitesmoke;
+
+    font-family: 'Aldrich';
+    background: black;
+    color: whitesmoke;
 }
 
 #navbar-text {
