@@ -3,6 +3,8 @@ html {
     background-color: black;
  }
 
+
+
  .preloader {
      position: absolute;
      left: 50%;
@@ -116,6 +118,9 @@ font-weight: 200;
 
 .thin {
 font-size: 0.5em;
+}
+.description {
+  text-align: left;
 }
 
 @media only screen and (max-width: 1020px) {
