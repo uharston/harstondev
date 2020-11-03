@@ -18,8 +18,8 @@ html {
      border-top: 16px solid green;
      width: 120px;
      height: 120px;
-     -webkit-animation: spin 2s linear infinite;
-     animation: spin 2s linear infinite;
+     -webkit-animation: spin 1s linear infinite;
+     animation: spin 1s linear infinite;
  }
 
  @-webkit-keyframes spin {
