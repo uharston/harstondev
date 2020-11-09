@@ -238,7 +238,7 @@ font-weight: bold;
 font-style: normal;
 }
 
-#about-me-title {
+.title {
 font-size: 8vw;
 }
 
@@ -297,3 +297,4 @@ a:hover {
 color: green;
 text-decoration: none;
 }
+
