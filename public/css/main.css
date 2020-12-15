@@ -57,6 +57,7 @@ html {
   }
   
   #myDiv {
+    display: block;
     text-align: center;
   }
 .large-header {
